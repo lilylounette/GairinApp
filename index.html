@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gairin Grammar Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Gairin Verb Engine</h1>
+
+    <div class="container">
+        <label>Infinitive Verb:</label>
+        <input type="text" id="verbInput" placeholder="Enter infinitive (e.g. ïqemon)">
+
+        <label>Tense:</label>
+        <select id="tense">
+            <option value="present">Present</option>
+            <option value="past">Past</option>
+            <option value="future">Future</option>
+            <option value="futureAnterior">Future Anterior</option>
+        </select>
+
+        <label>Politeness:</label>
+        <select id="politeness">
+            <option value="formal">Formal</option>
+            <option value="informal">Informal</option>
+        </select>
+
+
+        <div class="checkboxes">
+    <label>
+        <input type="checkbox" id="necessity">
+        Necessity (<span class="gairin">-fe</span>)
+    </label>
+
+    <label>
+        <input type="checkbox" id="advice">
+        Advice (<span class="gairin">-qavo</span>)
+    </label>
+
+    <label>
+        <input type="checkbox" id="negation">
+        Negation (<span class="gairin">-nuk</span>)
+    </label>
+
+    <label>
+        <input type="checkbox" id="question">
+        Question (<span class="gairin">-ma</span>)
+    </label>
+</div>
+
+        <button onclick="conjugate()">Conjugate</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
