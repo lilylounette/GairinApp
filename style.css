@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Gairin';
+    src: url('GAIRIN.TTF') format('truetype');
+}
+
+body {
+    font-family: Arial, sans-serif; /* Normal font for interface */
+    background-color: #f4f4f4;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    font-family: 'Gairin', sans-serif;
+    font-size: 1.2em;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.checkboxes label {
+    display: block;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.8em;
+    text-align: center;
+    font-family: 'Gairin', sans-serif; /* ONLY the result uses Gairin */
+}
+
+.gairin {
+    font-family: 'Gairin', sans-serif;
+}
